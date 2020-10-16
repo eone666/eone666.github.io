@@ -1,5 +1,34 @@
+/*
+CSS variables:
+  --bg-main: main background color
+  --bg-secondary: secondary background color
+  --text-main: main text color
+  --accent: accent color
+Default values:
+  --bg-main: #0f0f0f
+  --bg-secondary: #1c1c1c
+  --text-main: #eeeeee
+  --accent: #ffb800
+
+For creating a new theme define this variables in separate file and connect to page
+*/
+
 * {
   background-origin: border-box;
+}
+
+body::-webkit-scrollbar,
+nav::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--bg-secondary);
+}
+
+body::-webkit-scrollbar-thumb,
+nav::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--accent);
 }
 
 html,
@@ -16,7 +45,6 @@ a {
 }
 
 .container {
-  padding: 0 20px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -131,7 +159,7 @@ a {
 }
 
 .main__hello-text {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .hello-text__main {
@@ -150,14 +178,16 @@ a {
 
 .social-icons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .social-icons__item {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 5px;
 }
 
 .social-icons__link {
