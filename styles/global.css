@@ -44,6 +44,21 @@ a {
   color: var(--text-main);
 }
 
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+figure figcaption {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -155,11 +170,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .main__hello-text {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .hello-text__main {
@@ -293,4 +309,70 @@ a {
 
 .footer__copyright {
   text-align: center;
+}
+
+.project__first-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 640px;
+}
+
+.project__name {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.project__description {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project__button {
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  height: 60px;
+  border-radius: 30px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.button_primary {
+  background-color: var(--accent);
+}
+
+.button_secondary {
+  background-color: var(--bg-secondary);
+}
+
+.button_external::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/external.svg");
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.learn-more-arrow {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.learn-more-arrow__text {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
