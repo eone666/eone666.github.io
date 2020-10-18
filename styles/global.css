@@ -104,7 +104,7 @@ figure figcaption {
   height: 10px;
   margin-left: 5px;
   transition-property: color, border;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
@@ -121,7 +121,7 @@ figure figcaption {
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
   transition-property: color, border;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
@@ -222,7 +222,7 @@ figure figcaption {
 .social-icons__icon {
   height: 30px;
   transition-property: color, border;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
@@ -296,11 +296,11 @@ figure figcaption {
   opacity: 1;
 }
 [data-tooltip]:hover:before {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
   transform: translate(-50%, -5px) scale(1);
 }
 [data-tooltip]:hover:after {
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
   transition-duration: 0.2s;
   transform: translateX(-50%) scaleY(1);
 }
@@ -346,6 +346,9 @@ figure figcaption {
   display: flex;
   align-items: center;
   font-size: 24px;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 .button_primary {
@@ -356,13 +359,17 @@ figure figcaption {
   background-color: var(--bg-secondary);
 }
 
-.button_external::after {
-  content: "";
+.button_primary:hover {
+  background: var(--accent-dark);
+}
+
+.button_secondary:hover {
+  color: var(--accent);
+}
+
+.button__external-icon {
   width: 20px;
   height: 20px;
-  background-image: url("../images/external.svg");
-  background-position: center;
-  background-size: cover;
   margin-left: 10px;
 }
 
